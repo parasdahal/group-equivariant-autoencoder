@@ -258,3 +258,23 @@ class Sampling(Layer):
     epsilon = K.random_normal(shape=(batch, dim))
     z = z_mean + K.exp(0.5 * z_log_var) * epsilon
     return z
+
+
+def gconv(filters,
+          kernel_size,
+          strides,
+          padding,
+          h_input='D4',
+          h_output='D4',
+          name='gconv'):
+  return GConv2D(filters,
+                 kernel_size,
+                 strides=strides,
+                 padding=padding,
+                 h_input=h_input,
+                 h_output=h_output,
+                 use_bias=False,
+                 kernel_initializer='he_normal',
+                 bias_initializer='zeros',
+                 activation=None,
+                 kernel_regularizer=None)
