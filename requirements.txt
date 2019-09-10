@@ -1,0 +1,5 @@
+git+https://github.com/nom/GrouPy#egg=GrouPy
+git+https://github.com/basveeling/keras-gcnn.git#egg=keras_gcnn
+keras==2.2.0
+disentanglement-lib
+gin-config==0.2.0
