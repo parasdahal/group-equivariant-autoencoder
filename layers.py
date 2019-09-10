@@ -1,7 +1,8 @@
 import os, sys
 import numpy as np
 import keras
-from keras.layers import Conv2D, Layer, MaxPool2D, Dense, Flatten, Activation, Reshape, UpSampling2D, Add, Multiply, Lambda, Input, InputLayer
+from keras.layers import Conv2D, Layer, MaxPool2D, Dense, Flatten,\
+Activation, Reshape, UpSampling2D, Add, Multiply, Lambda, Input, InputLayer
 from keras_gcnn.layers import GConv2D, GBatchNorm
 from keras_gcnn.layers.pooling import GroupPool
 import keras.backend as K
