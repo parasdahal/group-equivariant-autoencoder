@@ -1,3 +1,5 @@
+import numpy as np
+import os
 from disentanglement_lib.data.ground_truth.dsprites import DSprites
 
 
