@@ -1,5 +1,6 @@
 import numpy as np
-import os
+import os, sys
+import keras
 from disentanglement_lib.data.ground_truth.dsprites import DSprites
 
 

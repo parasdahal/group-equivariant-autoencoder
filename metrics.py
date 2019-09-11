@@ -1,3 +1,6 @@
+import numpy as np
+import os, sys
+import keras
 from disentanglement_lib.evaluation.metrics import beta_vae, factor_vae, mig,\
  modularity_explicitness, dci, sap_score, irs, unsupervised_metrics
 from disentanglement_lib.evaluation.metrics import utils
